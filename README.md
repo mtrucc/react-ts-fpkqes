@@ -1,3 +1,7 @@
-# react-ts-fpkqes
+# Object Detection With React and TensorflowJS
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-ts-fpkqes)
+This repo implements object detection using ReactJS and TensorflowJS
+
+## Models Supported
+
+- Face Mask Detection
