@@ -76,13 +76,16 @@ function MaskDetection(props) {
       // });
 
       const obj = await net.executeAsync(processed);
-      console.log(obj);
+  for (let index = 0; index < obj.length; index++) {
+    const element = obj[index];
+    console.log(element.dataSync());
+    console.log(element.shape);
+  }
 
       const [boxes, scores, classes, valid_detections] = obj;
       const boxes_data = boxes.dataSync();
       const scores_data = scores.dataSync();
       const classes_data = classes.dataSync();
-      console.log(classes_data[0]);
       const valid_detections_data = valid_detections.dataSync()[0];
 
       tf.dispose(obj);
