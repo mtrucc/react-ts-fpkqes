@@ -76,6 +76,7 @@ function MaskDetection(props) {
       // });
 
       const obj = await net.executeAsync(processed);
+      console.log(obj);
 
       const [boxes, scores, classes, valid_detections] = obj;
       const boxes_data = boxes.dataSync();
