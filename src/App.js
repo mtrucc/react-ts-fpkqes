@@ -13,7 +13,7 @@ function App() {
   };
   return (
     <div className="App">
-      <h1>Real Time Object Detection</h1>
+      <h1>计算机视觉 - 口罩识别</h1>
       <div className="App-header">
         <Webcam
           className="webcam"
